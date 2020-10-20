@@ -1,0 +1,90 @@
+import time
+import random
+
+print("Welcome to UNO (Python)")
+time.sleep(1)
+print("Press 1 to Begin")
+start = int(input())
+
+deckList = ["redZero", "red1", "red2", "red3", "red4", "red5", "red6", "red7", "red8", "red9", "red1", "red2", "red3", "red4", "red5", "red6", "red7", "red8", "red9", "red1", "red2", "red3", "red4", "red5", "red6", "red7", "red8", "red9", "red1", "red2", "red3", "red4", "red5", "red6", "red7", "red8", "red9", "blueZero", "blue1", "blue2", "blue3", "blue4", "blue5", "blue6", "blue7", "blue8", "blue9", "blue1", "blue2", "blue3", "blue4", "blue5", "blue6", "blue7", "blue8", "blue9", "blue1", "blue2", "blue3", "blue4", "blue5", "blue6", "blue7", "blue8", "blue9", "blue1", "blue2", "blue3", "blue4", "blue5", "blue6", "blue7", "blue8", "blue9", "blue1", "blue2", "blue3", "blue4", "blue5", "blue6", "blue7", "blue8", "blue9", "yellowZero", "yellow1", "yellow2", "yellow3", "yellow4", "yellow5", "yellow6", "yellow7", "yellow8", "yellow9", "yellow1", "yellow2", "yellow3", "yellow4", "yellow5", "yellow6", "yellow7", "yellow8", "yellow9", "yellow1", "yellow2", "yellow3", "yellow4", "yellow5", "yellow6", "yellow7", "yellow8", "yellow9", "yellow1", "yellow2", "yellow3", "yellow4", "yellow5", "yellow6", "yellow7", "yellow8", "yellow9", "greenZero", "green1", "green2", "green3", "green4", "green5", "green6", "green7", "green8", "green9", "green1", "green2", "green3", "green4", "green5", "green6", "green7", "green8", "green9", "green1", "green2", "green3", "green4", "green5", "green6", "green7", "green8", "green9", "green1", "green2", "green3", "green4", "green5", "green6", "green7", "green8", "green9"]
+
+cardOne =random.choice(deckList)
+cardTwo = random.choice(deckList)
+cardThree = random.choice(deckList)
+cardFour = random.choice(deckList)
+cardFive = random.choice(deckList)
+cardSix = random.choice(deckList)
+cardSeven = random.choice(deckList)
+openingCard = random.choice(deckList)
+secondCard = random.choice(deckList)
+thirdCard = random.choice(deckList)
+fourthCard = random.choice(deckList)
+fifthCard = random.choice(deckList)
+sixthCard = random.choice(deckList)
+seventhCard = random.choice(deckList)
+eighthCard = random.choice(deckList)
+ninthCard = random.choice(deckList)
+tenthCard = random.choice(deckList)
+
+#First Round
+if start == 1:
+  print("Your Hand is", cardOne, cardTwo, cardThree, cardFour, cardFive, cardSix, cardSeven,)
+
+time.sleep(1)
+
+print("The starting card is", openingCard,)
+
+time.sleep(1)
+
+print("Type in your play, remember type EXACTLY what the card is called")
+playerCard = str(input())
+
+if playerCard != cardOne or cardTwo or cardThree or cardFour or cardFive or cardSix or cardSeven:
+    print("You do not have this card.")
+
+if playerCard == openingCard or "red" in openingCard and "red" in playerCard or "yellow" in openingCard and "yellow" in playerCard or "green" in openingCard and "green" in playerCard or "blue" in openingCard and "blue" or "Zero" in openingCard and "Zero" in playerCard or "1" in openingCard and "1" in playerCard or "2" in openingCard and "2" in playerCard or "3" in openingCard and "3" in playerCard or "4" in openingCard and "4" in playerCard or "5" in openingCard and "5" in playerCard or "6" in openingCard and "6" in playerCard or "7" in openingCard and "7" in playerCard or "8" in openingCard and "8" in playerCard or "9" in openingCard and "9" in playerCard:
+  print("You played", playerCard,)
+else:
+  print("You can't play this card")
+
+#Second Round
+if start == 1:
+  print("Your Hand is", cardOne, cardTwo, cardThree, cardFour, cardFive, cardSix, cardSeven,)
+
+time.sleep(1)
+
+print("The card is", secondCard,)
+
+time.sleep(1)
+
+print("Type in your play, remember type EXACTLY what the card is called")
+playerCard = str(input())
+
+if playerCard != cardOne or cardTwo or cardThree or cardFour or cardFive or cardSix or cardSeven:
+    print("You do not have this card.")
+
+if playerCard == openingCard or "red" in secondCard and "red" in playerCard or "yellow" in secondCard and "yellow" in playerCard or "green" in secondCard and "green" in playerCard or "blue" in secondCard and "blue" or "Zero" in secondCard and "Zero" in playerCard or "1" in secondCard and "1" in playerCard or "2" in secondCard and "2" in playerCard or "3" in secondCard and "3" in playerCard or "4" in secondCard and "4" in playerCard or "5" in secondCard and "5" in playerCard or "6" in secondCard and "6" in playerCard or "7" in secondCard and "7" in playerCard or "8" in secondCard and "8" in playerCard or "9" in secondCard and "9" in playerCard:
+  print("You played", playerCard,)
+else:
+  print("You can't play this card")
+
+  #Third Round
+if start == 1:
+  print("Your Hand is", cardOne, cardTwo, cardThree, cardFour, cardFive, cardSix, cardSeven,)
+
+time.sleep(1)
+
+print("The card is", thirdCard,)
+
+time.sleep(1)
+
+print("Type in your play, remember type EXACTLY what the card is called")
+playerCard = str(input())
+
+if playerCard != cardOne or cardTwo or cardThree or cardFour or cardFive or cardSix or cardSeven:
+    print("You do not have this card.")
+
+if playerCard == thirdCard or "red" in thirdCard and "red" in playerCard or "yellow" in thirdCard and "yellow" in playerCard or "green" in thirdCard and "green" in playerCard or "blue" in thirdCard and "blue" or "Zero" in thirdCard and "Zero" in playerCard or "1" in thirdCard and "1" in playerCard or "2" in thirdCard and "2" in playerCard or "3" in thirdCard and "3" in playerCard or "4" in thirdCard and "4" in playerCard or "5" in thirdCard and "5" in playerCard or "6" in thirdCard and "6" in playerCard or "7" in thirdCard and "7" in playerCard or "8" in thirdCard and "8" in playerCard or "9" in thirdCard and "9" in playerCard:
+  print("You played", playerCard,)
+else:
+  print("You can't play this card")
